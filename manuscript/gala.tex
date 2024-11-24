@@ -1,0 +1,935 @@
+\documentclass[twocolumn]{dndbook}
+
+% Compile using UTF-8
+\usepackage[utf8]{inputenc}
+
+% Use this package to break up a list into multiple columns
+\usepackage{multicol}
+
+\usepackage{xkcdcolors}
+
+\usepackage{mdframed}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, % Whether to color links (a thin box is output around links if this is false)
+	%hidelinks, % Hide the default boxes around links
+	urlcolor=xkcdDirtyOrange, % Color for \url and \href links
+	linkcolor=black, % Color for \ref/\nameref links
+	citecolor=xkcdDirtyOrange, % Color for reference citations like \cite{}
+	hyperindex=true, % Adds links from the page numbers in the index to the relevant page
+	linktoc=all, % Link from section names and page numbers in the table of contents
+}
+
+
+\newenvironment{emphasisParagraph}{
+	\begin{quote}
+	\begin{mdframed}[
+		topline=false,
+		bottomline=false,
+		rightline=false,
+		skipabove=\topsep,
+		skipbelow=\topsep,
+		linecolor=xkcdBottleGreen,
+		linewidth=3pt,
+	]
+	\em
+}{
+	\end{mdframed}
+	\end{quote}
+}
+
+
+
+
+\begin{document}
+
+\section{Summary}
+
+This adventure is a theft mystery at the Tain Gala.
+% TODO: Add a reference to the Tain Gala in the book.
+I wrote this adventure to be as non-linear as possible to avoid railroading,
+as non-violent as possible without sacrificing action.
+It should be a great adventure to introduce a beginner party to Sharn,
+or to introduce an up-and-coming party to the high society in Sharn.
+\par
+
+The adventure details everything that will happen during an instance of the Tain Gala.
+In addition, it details the characters, their motives and their tactics if things do not go their way.
+It should have enought material if the PCs only want to have conversations with important people in Sharn and not even get engaged in the theft.
+It can also be played from the perspective of the thief, or bodyguards hired to protect.\par
+
+The manuscript is organized into different sections of the gala,
+starting with appetizers and ending with the desserts.
+At each section, there are three subsections:
+where is everyone subsections describe where all of the important NPCs will be during this time.
+This is to help the DM improvise consistent encounters as players go off the scripts and move around the manor.
+The hint drops subsections are to explain the rolls that players can be asked to make to piece together evidence about the eventual theft.
+Finally, forks sections detail the different paths that the adventure can take if the PCs disrupt the plans.
+Hopefully, with all of these, you will be able to create a fun adventure no matter what the players do.
+
+\section{Prelude}
+Before the events start, \nameref{subsec:professor_lysander_thorne} asks
+\nameref{subsec:celyria_irtain} to safekeep a powerful and potentially
+dangerous artifact. This artifact, called the Xen'drik Nexus Crystal,
+was recently ``recovered'' (read: looted) from a Xen'drik temple
+in an expedition funded by \nameref{subsec:the_twelve}.\par
+% TODO: Add the artifact, its properties, and write a link.
+
+Unbeknownest to \nameref{subsec:celyria_irtain}, the reason that
+\nameref{subsec:professor_lysander_thorne} asked her to keep the artefact is
+that he got spooked
+by an agent of \nameref{subsec:kings_dark_lanterns}. He felt threatened that
+powerful groups started showing interest in the artifact, and he wanted
+to get somebody powerful and visible involved. Since Celyria knew Prof Thorne
+from before, she was happy to oblige. A group of students loaded the artifact
+onto a skycoach used by the University and brought it to the Tain Mansion.
+This drew even more attention, and now there are five factions with vested interest
+in the artifact:
+
+% TODO: Add the namerefs
+\begin{enumerate}
+    \item The Twelve
+    \item Aurum
+    \item Argentum
+    \item The Shadow Council
+    \item The Tyrants
+    \item (Optional) King's Dark Lanterns
+\end{enumerate}
+
+A few days ago, \nameref{subsec:althea_dlyrandar} came over to the university to collect the artifact.
+She got frustrated when she found out that it was not there.
+Once she learned that it was at the Tain Mansion, she asked for an appointment with \nameref{subsec:celyria_irtain}.
+She found herself getting an invite to the Gala, ``for a discourse with other interested parties''.\par
+
+The Twelve and the Aurum got into contact with Celyria ir'Tain, and both sent members to negotiate.
+However, the Shadow Council within Aurum is conspiring with The Tyrants to steal the artifact.
+In addition, Argentum sent its own agent to ``retrieve'' the artifact and ``contain'' it since it can be a threat.\par
+
+If the adventurers do nothing, the artifact will be stolen by an agent of the The Tyrants, to be sold to the Shadow Council.
+The Argentum agent will get caught right after (and will have no idea what happened to the artifact, since the theft happened before he made his move.)
+
+
+% TODO: Optionally, King's Dark Lanterns may have communicated with Celyria ir'Tain. Add.
+
+\subsection{Security at The Tain Manor}
+
+% TODO: Add Selene
+% TODO: Add the griffon riders
+% TODO: Add the valenar war bands
+% TODO: Add the warforged guards at the gates and at the study.
+% TODO: Add a few words about Ilthanar
+
+\section{Factions}
+
+\subsection{The Twelve}
+\label{subsec:the_twelve}
+The Twelve's mission is to get the Dragonmarked houses working together.
+They are a consostium of houses, and their origins go back as far as the
+Galifar Empire,
+
+
+\subsection{Aurum}
+\label{subsec:aurum}
+% TODO: Finish this section.
+
+\subsection{King's Dark Lanterns}
+\label{subsec:kings_dark_lanterns}
+% TODO: Finish this section.
+
+\subsection{Argentum}
+\label{subsec:argentum}
+% TODO: Finish this section.
+
+\subsection{Morgraive University}
+% TODO: Finish this section.
+
+\subsection{ir'Tain Family}
+% TODO: Finish this section.
+
+
+\section{Hooks --- Why are the PCs at the Gala?}
+
+\subsection{Called in to Investigate}
+If the characters are known for their investigative endeavours, they can be called to investigate and find the culprit.
+% TODO: Finish this section
+
+\subsection{Attending as Adventurers}
+If the characters did something for the ir'Tain family or gained some renown, they can be randomly attending the Gala.
+% TODO: Finish this section
+
+\subsection{Member of ir'Tain Family}
+% TODO: Finish this section
+
+\subsection{Grad Students from Morgraive University}
+The chracters can Professor Thorne's grad students, and may have simply stayed after carrying the artifact.
+% TODO: Finish this section. They are hanging around awkwardly, likely.
+
+\subsection{Aurum}
+% TODO: Finish this section.
+
+\subsection{Hired to Protect --- Warband}
+The adventurers can be a Valenar War Band, hired as extra security. They will bbe outside, and the adventure will begin only after the theft occurs.
+% TODO: Finish this section.
+
+\subsection{Hired to Protect --- Warforged}
+The adventurers can be an elite group of warforged. Remove the relevant NPCs and replace them with the adventurers.
+% TODO: Finish this section.
+
+\subsection{Agents of the Argentum}
+The adventurers can be agents of the Argentum, who are asked to ``retrieve'' the artifact for containment. Remove \nameref{subsec:kaelen_veran} and replace him with the adventurers.
+% TODO: Finish this section.
+
+\subsection{Another Neist}
+The adventurers can prepare for the heist themselves, and can be a third thief in addition to Lyr and \nameref{subsec:kaelen_veran}. The events will unfold as usual.
+They can either finish first and steal the artifact, run into Lyr, or run into Kaelen, or miss entirely.
+If they get caught, they can be blamed for the theft and may even be required to clean up their name.
+% TODO: Finish this section.
+
+\section{List of Characters}
+
+This is a brief list of characters. Full details can be found in Section \nameref{subsec:npc_summary}.
+
+% TODO: Add the namerefs
+\begin{enumerate}
+    \item \nameref{subsec:celyria_irtain}: Matriarch of the all-powerful ir'Tain family. A prominent socialite, she is hosting the gala like she does every month.
+    \item \nameref{subsec:selene_dmedani}: Head of security / spymaster for Celyria ir'Tain. She has been with the family for years.
+    \item \nameref{subsec:ilthaner_dorien}: In-house arcane consultant for the ir'Tain. He has a room, but does not stay in the house usually. He is here to help Selene with the protection of the artifact.
+    \item \nameref{subsec:kaelen_veran}: Argentum agent working under cover at the Thrane embassy. He will attempt to steal the crystal, but will be too late.
+    \item \nameref{subsec:lyr}: Changeling posing as \nameref{subsec:lira_shadowheart}. She will successfully steal the crystal if the players do not interfere.
+    \item \nameref{subsec:althea_dlyrandar}: Representative of The Twelve, came here to talk to Celyria to convince her to send her the artifact.
+\end{enumerate}
+
+In addition to these NPCs, the following NPCs from other sources of Eberron literature are also at the Gala.
+Their whereabouts and motives can be important and they can be incorporated into the story as desired:
+Lain of Clan Soldorak (because he is a high-ranking Aurum member and is in the Shadow Council),
+Lady Anador ir'Laisha (because she is the ambassador to Thrane, and \nameref{subsec:kaelen_veran} is operating under cover in her embassy),
+Lieutenant Eld ir'Zarna \& Lieutenant Eld ir'Zarna (because they are the heads of King's Swords and the City Guard, and may help or take action if they notice something is wrong)
+Saidan Boromar (because he is a member of the Aurum and the Shadow Council).\par
+
+% TODO: Add something about how Anador ir'Laisha may react if Kaelen is caught.
+% TODO: Add something about how the barrister Bestan ir'Tonn may step in if Saidan Boromar is implicated in any way.
+
+Finally, \nameref{subsec:elazti} may also be important. If Lyr fails to escape after the theft, she will try to impersonate Elazti.
+
+\section{Brief Timeline}
+
+
+\subparagraph*{Appetizers} Guests start arriving. Appetizers are being handed out. PCs can strike conversations.
+
+\subparagraph*{Soups} A performance takes place. PCs can strike conversations. Celyria will hold a discussion about the Xendrik Nexus Crystal.
+
+\subparagraph*{Salads} Celyria and company will be in the study. At the end, they leave the study and rejoin the gala.
+
+\subparagraph*{Main Course} A theft takes place in the study.
+
+\subparagraph*{Desserts} The thief attempts to escape.
+
+\subparagraph*{Aftermath} The thief may escape, may get caught, a chase might start, or the PCs can get incorrectly accused. Alternatively, the PCs can simply go home. In this case, they can find themselves with the stolen artifact, and may be hunted down by various NPCs and factions.
+
+The chapter Timeline of the Events details each one of these scenes, what all of the NPCs are doing, what clues can be gathered, and how the PCs can get involved.
+
+\section{Appetizers}
+% TODO: Finish this section.
+
+\subsection{Arriving in Skyway}
+
+Guests start arriving.
+To arrive, guests first come to the Brilliant neighbornood in Skyway district.
+This involves an ascending flight of 1200 ft from the highest towers in the upper wards.
+This flight can be done through \href{https://keith-baker.com/ifaq-skycoaches/}{The Gold Line skycoach company}.
+\begin{emphasisParagraph}
+	The skycoaches go at 75 ft per round, and they finish the voyage in 16 minutes once they take off.
+	The skycoach stop should be about 15 minute walk away from the Tain manor.
+	This can be changed at the DM's discretion --- it is important because a chase might ensue.
+	% TODO: Add a reference to the description of skycoaches in the book.
+\end{emphasisParagraph}
+Alternatively, the PCs can use soarsleds if they have one.
+\begin{emphasisParagraph}
+	In case the party members have soarsleds and leave them here,
+	the DM should take note of this, since they can be used in a chase afterwards.
+	The soarsleds travel with a speed of 30 ft, but can go at 90ft with an Dexterıty (Acrobatics) DC 12 check.
+	Without Dexterity (Acrobatics) checks,
+	they will take slightly over half hour to get to the Skyway from the upper reaches.
+	% TODO: Add a reference to the description of skycoaches in the book.
+\end{emphasisParagraph}
+
+% TODO: Add a reference to the description of soarsleds in the book.
+Finally, players can use their own means of flight, such as an aerial mount or a magic spell.
+This is important, as it will give players an edge in the aerial chase that may follow the theft.
+
+\subsection{Manor Gates}
+
+
+There are two Warforged guards at the gate, along with a half-elf.
+% TODO: Add a reference to their stats.
+If the PCs are guests, they will check in their weapons at the guard house at the manor gates.
+If PCs are hired to protect, then they do not check their weapons.
+In addition, they can leave their soarsleds here if they are still carrying them.\par
+
+A Perception (Wis) DC 12 check will show that the half-elf is a figure of authority.
+If they beat DC 15 on the same check, they will notice that that the half-elf is a dragonmarked house member.
+More information can be found about \nameref{subsec:selene_dmedani} in the relevant seciion,
+and the PCs may know her (or be hired by her) at DM's discretion.\par
+
+The gates are 120 ft away from the main entrance.\par
+
+
+
+\subsection{Polite Conversations}
+
+% How to guide the conversation / Dice to roll to decide who they talk to.
+
+% House Orien representative can discuss the destruction of the White Arch Bridge and that they are still trying to recover from it.
+% https://dumpstatadventures.com/a-players-perspective/dragonmarked-houses-house-orien
+
+% TODO: Add Keith Baker's Blog posts to each possible conversion.
+
+% Diplomats
+
+% ir'Morgraive
+% Professor Thorne
+
+% Military & City Guard
+
+% Other Business People
+
+% Random Dwarf
+
+% Random Halfling
+
+% Random Gnome
+
+% Monarchist vs Anti-monarchist Conversation - Maza ir’Thadian and Evix ir’Marasha
+
+% Anti-monarchist Conversation - Daphanë d’Kundarak
+
+% Separatist Conversation - Sava Kharisa
+
+% Somebody famous - Tyasha d'Phiarlan
+
+
+% Any random Conversation
+
+\subsection{Where is Everyone?}
+\subsection{Hint Drops}
+
+\subsection{Forks}
+
+
+% TODO: Add a reference to Lyr Tries To Leave - it is best if Lyr takes on the look of someone who the PCs had a conversation with.
+
+\section{Soups}
+% TODO: Finish this section or combine with Salads & finish?
+\subsection{Performance}
+
+\subsection{Where is Everyone?}
+\subsection{Hint Drops}
+
+
+
+\section{Salads}
+% TODO: Finish this section or combine with Soups & finish?
+\subsection{The Negotiations}
+
+\subsection{Where is Everyone?}
+\subsection{Hint Drops}
+
+
+
+\section{Main Course}
+
+During the dinner, Lira Shadowheart (a.k.a. Lyr) will attempt (and likely succeed in) the theft.
+% TODO: Add Lira Shadowheart (a.k.a. Lyr) to the list of NPCs.
+At the same time, Kaelen will sneak out to the gardens.
+% TODO: Add Kaelen to the list of NPCs.
+
+% TODO: Finish this section.
+
+\subsection{The Theft}
+During the negotiations, Lyr will split and show an interest in the study door.
+% TODO: Add Lira Shadowheart (a.k.a. Lyr) to the list of NPCs.
+This will go unnticed by the NPCs, except, at the DM's discretion, the warforged guards at the door.
+(Intelligence (Investigation) or Wisdom (Insight) against Lyr's Charisma (Deception) DC 19)
+When Illanthra goes back to his room to retrieve a scroll of \emph{Alarm}, Lyr will follow Illanthra to his room, subdue him, and take on his appearance.
+While doing so, Lyr may also take on the appearance of a servant (perhaps Elazti) to confuse Illanthra and others.
+Lyr will strip Illanthra, and wear his robes on top of their glamerweave --- they do not have this particular robe on their glamerweave.
+% TODO: Add Illanthra to the NPCs.
+% TODO: Add an alternative route if Lyr fails but cannot
+% TODO: Add the point about the purse
+% TODO: Add the purse into the items section.
+She will then come back to the study, enter it. At this point, Selene moves away from the room.
+% TODO: Add Selene to the NPCs
+Lyr, as Illanthra, will be away from anybody's view (even though the door is open) for about 5 seconds. This is enough for her to put the entire thing into her \nameref{subsec:purse_of_holding}.
+% TODO: Add methods of detection, such as _Arcane Eye_ or a familiar left in the study.
+Lyr, as Illanthra, gets out of the study, closes the door behind her. She will now attempt to make an escape, but this will --- likely --- fail because security will lock down the environs.
+See the subsection \nameref{subsec:lyr_tries_to_leave}.
+
+
+\subsection{Where is Everyone?}
+\subsection{Hint Drops}
+
+
+
+\section{Desserts}
+% TODO: Finish this section
+At this point, Lyr will try to leave and Kaelen will get caught.
+This will eventually lead to the \nameref{sec:chase} or if they miss Lyr, \nameref{sec:investigation}.
+The more time players spend with Kaelen, the more head start Lyr will get.
+
+\subsection{Kaelen: Failed Attempt}
+\nameref{subsec:kaelen_veran} is out in the garden. He notices the griffon riders, and attempts to hide near the windows of the study.
+He uses \emph{Misty Step} to move into the study. This does not trigger any alarms.
+However, he does not have any idea what the crystal looks like.
+He looks around, and while searching for anything crystal-looking or magical, he triggers another \emph{Alarm} spell and gets caught.
+
+\subsection{Lyr: Escape}
+\label{subsec:lyr_tries_to_leave}
+
+Lyr first tries to leave looking like another guest.
+She walks halfway to the gates of the manor,
+takes off Ilthanar's robes near a tree, stealthily.
+(As DM, you may roll Stealth (Dex) +3 DC 14 to see if the Thalia d'Vadalis notices Lyr changing the cloth.)
+
+
+\subsection{Where is Everyone?}
+\subsection{Hint Drops}
+
+
+
+
+
+Lyr now poses as a random guest.
+% TODO: Add the partial guest list
+The GM may randomly choose the NPC. However, the recommendation is that the PCs will have talked to some guests, and Lyr impersonates them.
+They go to the entrance. However, by the time they reach the gates, Selene will have warned the guards with speaking stones.
+This shuts down the gates.
+
+\subsection{Celyria Attempts to Manage the Crisis}
+\label{subsec:celyria_attempts_to_manage_the_crisis}
+Once the warforged send out the message using the speaker stone, Celyria and Selene will both go into the study.
+% TODO: Add Selene to the NPCs.
+They will at first assume that \nameref{subsec:kaelen_veran} is responsible. Kaelen is not responsible, and in fact, does not even know what the crystal looks like or what it does.
+The sooner that they realize this, the better, because the real thief is actually getting away.
+If this does not happen, then use either one of the two triggers: one of the valenar war band members notice that the mage took of his robe on the way to the gates.
+Or, the griffin riders notice that a guest left early, and will inform Selene.
+If they do not, see the continuation of the interrogation in \nameref{subsec:in}.
+% TODO: Fix the nameref above.
+
+
+
+At this point, Illanthra will be nowhere tobe found, because he is in his room, without his robe, and tied to his bed.
+
+
+\subsubsection*{If the gates are not shut}
+If the gates are not shut down, the griffon riders will notice that somebody has left early, and will inform Selene.
+If any one of the PCs enquire, and they know the guest, they can realize that the guest in question is in the room, with a roll of DC 18 Intelligence (Investigation).
+If they do not inquire, they can still find out on a roll of DC 28 Wisdom (Insight).
+It is possible for players to chase down Lyr, go to \nameref{subsec:chase}.
+If Lyr escapes, they will drop a card to Shifting Shadows Saloon, a bar in Lower Tavick's Landing.
+If Lyr is surrounded, they will try to negotiate a way for them to get away, and may leave the artifact, go to \nameref{subsec:negotiation_with_lyr}.
+As a last resort, Lyr will fight, go to \nameref{subsec:fight_with_lyr}.
+
+\subsubsection*{If the gates are shut}
+Lyr now comes back and starts to masquerade as Elazti, one of the younger maids.
+They will follow Elazti to her room, subdue her easily, and tie her up.
+Optionally, they may choose to leave the purse here not to rouse suspicion, thinking that they will fetch it later.
+They will have to hide their purse somewhere, and optionally, may attempt a switch with one of the players' purses or bags.
+% TODO: Add Elazti. If one of the PCs is an ir'Tain or related to ir'Tain, they will know Elazti, explain how.
+Celyria or one of the senior maids will call them and ask them to serve.
+
+
+
+\subsubsection*{The Purse Switch}
+
+Optionally, Lyr may switch her purse with a player to help her escape.
+This is possible only if there were not previous reference to the purse on Lira Shadowheart and on Illanthra.
+In this case, we will say that the ``bag of holding'' is the same as an item that one of the players are carrying.
+% TODO: Add the purse of holding under items.
+Lyr may either try to switch using Dextery (Sleight of Hand) opposed on the PC's Wisdom (Perception). In this case, Lyr's bonus is +3.
+If the PC fails, they will not notice how their purse was replaced.
+They actually prefer to use Charisma (Deception) opposed to the PC's Wisdom (Insight), where they get a +9 bonus.
+In this case, if the PC fails the roll, they will remember in a few moments that a servant gave them their purse, bag or item, but not who the servant was.
+If they fail with a difference more than 10, they will not remember at all.
+In any case, if the PC realizes what is happening, this may trigger the chase scene --- go to \nameref{subsec:chase}.
+
+
+\subsubsection*{Finally}
+If the artifact does not appear, Celyria may be persuaded to call \nameref{subsec:constable_grindlethorpe_thistlespine}.
+She does not want to do this, and wants to open the gates, to avoid a scandal.
+However, either the PCs, or an agent from \nameref{subsec:kings_dark_lanterns} may persuade her to call the City Watch.
+In this case, \nameref{subsec:constable_grindlethorpe_thistlespine} will arrive and start collecting clues.
+
+\subsection{Lyr Was Caught}
+\label{subsec:lyr_was_caught}
+Lyr now poses as a random guest.
+% TODO: Add the partial guest list
+The GM may randomly choose the NPC. However, the recommendation is that the PCs will have talked to some guests, and Lyr impersonates them.
+They go to the entrance. However, by the time they reach the gates, Selene will have warned the guards with speaking stones.
+This shuts down the gates.
+
+
+
+
+\section{Chase}
+\label{sec:chase}
+
+\subsection{Negotiation with Lyr}
+\label{subsec:negotiation_with_lyr}
+
+\subsection{Fight with Lyr}
+\label{subsec:fight_with_lyr}
+
+
+\section{Investigation}
+\label{sec:investigation}
+
+\subsection{Interrogation of Kaelen Velan}
+Kaelen will start denying everything.
+% TODO: Add Kaelen to the NPCs.
+If \emph{Detect Thoughts} is used, he will be cursing himself for getting caught. If probed, his identity will be clear.
+% TODO: Add intimidation or deception checks.
+
+Once Celyria finds out that this is a diplomat, she will call in Lady Anador ir'Laisha (one of the guests) and ask her if she knows who this person is.
+Lady Anador ir'Laisha will be genuinely surprised, because she will be thinking that this person was his bodyguard.
+
+\subsection{Interrogation of Lyr}
+
+
+
+
+
+
+
+
+
+\section{Items}
+
+\subsection{Purse of Holding}
+\label{subsec:purse_of_holding}
+
+\subsection{Xen'drink Nexus Crystal}
+\label{subsec:xendrik_nexus_crystal}
+
+
+\section{NPCs}
+\label{sec:npcs}
+
+\subsection{NPC Summary}
+\label{subsec:npc_summary}
+
+\begin{DndTable}[header=NPCs]{XX}
+                	& Lyr
+\\	Attack      	& Some value
+\\	AC				& Some value
+\\	HP				& Some value
+\\	Acrobatics  	& Some value
+\\	Athletics   	& Some value
+\\	Stealth     	& Some value
+\\	Deception   	& Some value
+\\	Perception   	& Some value
+\\	Strength    	& Some value
+\\	Dexterity   	& Some value
+\\	Constitution	& Some value
+\end{DndTable}
+
+
+\subsection{Althea d'Lyrandar}
+\label{subsec:althea_dlyrandar}
+% TODO: Finish this section
+
+
+\subsection{Celyria ir'Tain}
+\label{subsec:celyria_irtain}
+Celyria ir'Tain is the matriarch of the ir'Tain family, and the most prominent socialite in Sharn.
+She is mentioned in several Eberron books.
+
+\subparagraph*{Roleplaying Notes} Celyria is typically calm.
+Decorum and her family's reputation matter to her most.
+She will act in the interests of her family first, then in the interests of the City of Sharn.
+If possible, roleplay her with a transatlantic accent, or an accent that shows an upper class upbringing.
+% TODO: Add a block for Celyria
+
+\subsection{Constable GrindleThorpe Thistlespine (High Ranking Officer of the City Watch)}
+\label{subsec:constable_grindlethorpe_thistlespine}
+
+Please find Constable GrindleThorpe Thistlespine on page 76 of The Game Master's Book of Non-Player Characters.
+% TODO: Add a bibliography & citation
+
+
+\subsection{Elazti}
+\label{subsec:elazti}
+% TODO: Finish this section
+
+\subsection{Ilthanar d'Orien}
+\label{subsec:ilthanar_dorien}
+% TODO: Finish this section
+
+\subsection{Kaelen Veran}
+\label{subsec:kaelen_veran}
+% TODO: Finish this section
+
+\subsection{Lira Shadowheart}
+\label{subsec:lira_shadowheart}
+% TODO: Finish this section
+
+\subparagraph*{Roleplaying Notes}
+If possible, give an accent to Lira Shawdowheart, and repeat the same accent for \nameref{subsec:lyr}.
+
+\subsection{Lyr}
+\label{subsec:lyr}
+
+Lyr is the real master thief behind Torban's operation.
+Torban, in his vanity, is not aware of this.
+Lyr will occasionally even impersonate Torban on heists.
+Lyr has been using this to get a foot in the Boromar Clan, but feels that this role has run its course.
+Very few people are aware that Lira Shadowheart is in fact a changeling called Lyr.
+
+\subparagraph*{Roleplaying Notes}
+If possible, use the same accent used for \nameref{subsec:lira_shadowheart} for Lyr.
+This can be an accent reflecting lower social status, and should stand out whenever they are impersonating socialites and diplomats.\par
+
+\begin{emphasisParagraph}
+	Lyr is an expert at deception and subterfuge, and not great at Acrobatics or Stealth.
+	Once her cover is blown, she is at a disadvantage.
+\end{emphasisParagraph}
+
+\subparagraph*{Intentions}
+Lyr wants to steal and sell this artifact to the highest bidder, potentially Saidan Boromar.
+They are motivated by greed.
+Lyr's overall objective is to ascend the ranks of both the Boromar Clan and the Tyrants, leveraging her skills and connections to amass wealth and authority.
+She seeks to use her position as Lira Shadowheart to gain access to valuable information, secrets, and resources, all the while furthering her own personal agenda of gaining dominance in the criminal world.
+
+\subparagraph*{Tactics}
+Lyr will rely on deception.
+If her cover is blown, she will use spells to try to get away.
+If left alone with another person, she will try to impersonate them, confusing people who may arrive later.
+If they are running away, they will first use \emph{Tasha's Hideous Laughter}, then \emph{Charm Person} to get away.
+In a chase situation, they will cast \emph{Cat's Grace} at the first opportunity.
+Finally, they can use \emph{Misty Step} as a last resort in their Ring of Spell Storing.
+
+\subparagraph*{Vulnerabilities}
+Lyr's clothes do not change when she shapeshifts.
+She uses glamerweave to overcome this difficulty, but only has five attires in the glamerweave.
+% TODO: Add reference to glamerweave.
+% TODO: Add the five attires, and the clue from Davandi's.
+
+
+% Monster stat block
+\begin{DndMonster}[width=.5\textwidth - 8pt]{Lyr}
+	\DndMonsterType{Changeling Bard, neutral evil}
+
+	\DndMonsterBasics[
+		armor-class = {15 (studded leather)},
+		hit-points  = {\DndDice{42 (6d8 + 12)}},
+		speed       = {30 ft.},
+	]
+
+	\DndMonsterAbilityScores[
+		str = 10,
+		dex = 16,
+		con = 14,
+		int = 14,
+		wis = 12,
+		cha = 16,
+	]
+
+	\DndMonsterDetails[
+		senses = {darkvision 60 ft., passive Perception 10},
+		challenge = 1,
+	]
+
+	% Traits
+	\DndMonsterAction{Beast Companion}
+	Thalia is bonded with a griffon companion named Storm. Storm has its own hit points, AC, and attacks in combat.
+
+	% Ranger Features
+	\DndMonsterAction{Favored Enemy}
+	Thalia has advantage on tracking and Intelligence checks to recall information about monstrosities.
+
+	\DndMonsterAction{Natural Explorer}
+	Thalia gains benefits to Wisdom (Survival) checks, tracking creatures, and navigating terrain types.
+
+	% Actions
+	\DndMonsterSection{Actions}
+	\DndMonsterAction{Multiattack}
+	Thalia makes two attacks.
+
+	\DndMonsterMelee[
+	name=Longbow,
+	mod=+5,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=piercing,
+	%extra=,
+	]
+
+	\DndMonsterMelee[
+	name=Shortsword,
+	mod=+3,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=piercing,
+	%extra=,
+	]
+
+\end{DndMonster}
+
+% Proficiencies:
+
+%     Skills: Deception, Insight, Perception, Persuasion, Performance
+%     Tools: Disguise Kit, Musical Instrument (Lute)
+%     Saving Throws: Dexterity, Charisma
+
+% Proficiency Bonus: +3
+
+% Hit Points: 42 (6d8 Hit Dice + 12 Constitution modifier)
+
+% Weapons and Equipment:
+
+%     Rapier (1d8 piercing damage)
+%     Light Crossbow (1d8 piercing damage)
+%     Lute (Musical Instrument)
+%     Thieves' Tools
+%     Disguise Kit
+%     Costume Props
+%     Fine Clothes
+%     Glamerweave: Servant Attire, Bard Attire, Guest Dress, Assassin Clothes
+%     Feather Token x4
+%     Essence of Ether x5
+%     Card from Clebdecher's Loom
+%     Ring of Spell Storing (Misty Step)
+%     Card from Shifting Shadows Saloon
+
+% Attack Bonus:
+
+%     Rapier: +6 to hit (+3 Dexterity modifier, +3 proficiency bonus)
+%     Light Crossbow: +6 to hit (+3 Dexterity modifier, +3 proficiency bonus)
+
+% Armor Class: 13 (10 base + 3 Dexterity modifier)
+
+% Feats: Expertise (Deception, Perception)
+
+% Spellcasting:
+
+%     Cantrips: Vicious Mockery, Minor Illusion
+%     1st Level Spells: (4) Tasha's Hideous Laughter, Charm Person
+%     2nd Level Spells: (3) Suggestion, Enhance Ability, Detect Thoughts
+
+% Bardic Features: Bardic Inspiration, Jack of All Trades, Song of Rest, Countercharm.
+
+Changeling Traits: Shapechanger, Duplicity, Unsettling Visage, Changeling Instincts.
+
+\subsection{Professor Lysander Thorne}
+\label{subsec:professor_lysander_thorne}
+
+Lysander Thorne is a professor at the Morgrave University.
+He recently came across an artifact that turned out to be very powerful.
+
+Roleplaying Notes: Professor Thorne is usually likes to brag and show off.
+However, after this last artifact, he understands that he is in way over his head.
+His confident and brash attitude is actually a cover for his insecure and anxious nature.
+Right now, his axious nature are showing, and he is spooked by all the agencies that want the artifact.
+
+% Monster stat block
+\begin{DndMonster}[width=.5\textwidth]{Prof Lysander Thorne}
+	\DndMonsterType{Human archaeologist, neutral}
+
+	\DndMonsterBasics[
+	  armor-class = {12 (studded leather)},
+	  hit-points  = {\DndDice{6d8 + 6}},
+	  speed       = {30 ft.},
+	]
+
+	\DndMonsterAbilityScores[
+	  str = 10,
+	  dex = 14,
+	  con = 12,
+	  int = 16,
+	  wis = 14,
+	  cha = 12,
+	]
+
+	\DndMonsterDetails[
+	  senses = {passive Perception 12},
+	  languages = {Common, Elvish, Dwarvish},
+	  challenge = 1/4,
+	]
+
+	% Traits
+	\DndMonsterAction{Disarming Whip Master}
+	Professor Thorne has honed his skills with the whip to disarm opponents. When making a successful attack with the whip, he can use a bonus action to attempt to disarm the target. The target must succeed on a Strength saving throw contested by Professor Thorne's Dexterity (Acrobatics) or Strength (Athletics) check (whichever is higher), or drop one item of Professor Thorne's choice that it's holding.
+
+	% Actions
+	\DndMonsterSection{Actions}
+	\DndMonsterMelee[
+	  name=Whip,
+	  mod=+4,
+	  dmg=\DndDice{1d4 + 2},
+	  dmg-type=slashing,
+	  extra={, and the target must make a DC 12 Strength saving throw or drop one item they are holding.},
+	]
+
+  \end{DndMonster}
+  % Monster stat block end
+
+\subsection{Selene d'Medani}
+\label{subsec:selene_dmedani}
+% TODO: Finish this section
+
+\subsection{Sentinel-3X9}
+\label{subsec:sentinel_3x9}
+% TODO: Finish this section
+
+\subsection{Tharos}
+\label{subsec:tharos}
+% TODO: Finish this section
+
+\subsection{Valeria d'Jorasco}
+\label{subsec:valeria_djorasco}
+Valeria d'Jorasco is the on-call healer for the ir'Tain family.
+She is at the premises, and will be called to heal the player characters if they are hurt.
+% TODO: Finish this section
+
+\subsection{Vornus}
+\label{subsec:vornus}
+% TODO: Finish this section
+
+
+\subsection{Thalia d'Vadalis}
+\label{subsec:thalia_dvadalis}
+Thalia is one of the Griffon riders that serve as the manor security regularly.
+
+% Monster stat block
+\begin{DndMonster}[width=.5\textwidth - 8pt]{Thalia Vadalis}
+	\DndMonsterType{Human ranger (Beast Master), neutral good}
+
+	\DndMonsterBasics[
+		armor-class = {15 (Studded Leather 12 + Dex 3)},
+		hit-points  = {27 \DndDice{3d10 + 6}},
+		speed       = {30 ft., fly 80 ft. (with griffon)},
+	]
+
+	\DndMonsterAbilityScores[
+		str = 12,
+		dex = 16,
+		con = 14,
+		int = 10,
+		wis = 14,
+		cha = 10,
+	]
+
+	\DndMonsterDetails[
+		saving-throws = {Str +3, Dex +5, Con +2, Int +0, Wis +2, Cha +0},
+		skills = {Animal Handling +4, Nature +2, Survival +4, Perception +4},
+		senses = {Darkvision 60 ft., Passive Perception 14},
+		challenge = 1,
+	]
+
+	% Traits
+	\DndMonsterAction{Beast Companion}
+	Thalia is bonded with a griffon companion named Storm. Storm has its own hit points, AC, and attacks in combat.
+
+	\DndMonsterAction{Spellcasting}
+    \begin{DndMonsterSpells}
+		\DndMonsterSpellLevel[3][3]{Animal Friendship, Cure Wounds, Speak With Animals}
+	\end{DndMonsterSpells}
+
+	\DndMonsterSection{Ranger Features}
+	\DndMonsterAction{Favored Enemy}
+	Thalia has advantage on tracking and Intelligence checks to recall information about monstrosities.
+
+	\DndMonsterAction{Natural Explorer}
+	Thalia gains benefits to Wisdom (Survival) checks, tracking creatures, and navigating terrain types.
+
+	% Actions
+	\DndMonsterSection{Actions}
+
+	\DndMonsterMelee[
+	name=Longbow,
+	mod=+7,
+	dmg=\DndDice{1d8 + 3},
+	dmg-type=piercing,
+	extra={(Fighting style: Archery)},
+	]
+
+	\DndMonsterRanged[
+	name=Shortsword,
+	mod=+3,
+	dmg=\DndDice{1d6 + 1},
+	dmg-type=piercing,
+	%extra=,
+	]
+
+\end{DndMonster}
+
+
+% Monster stat block for Storm, the Griffon Companion
+\begin{DndMonster}[width=.5\textwidth - 8pt]{Storm, the Griffon}
+	\DndMonsterType{Beast, neutral}
+
+	\DndMonsterBasics[
+		armor-class = {12 (natural armor)},
+		hit-points  = {\DndDice{4d10 + 4}},
+		speed       = {30 ft., fly 80 ft.},
+	]
+
+	\DndMonsterAbilityScores[
+		str = 18,
+		dex = 15,
+		con = 13,
+		int = 2,
+		wis = 12,
+		cha = 7,
+	]
+
+	\DndMonsterDetails[
+		senses = {darkvision 60 ft., Passive Perception 11},
+		languages = --,
+		challenge = 2,
+	]
+
+	% Actions
+	\DndMonsterSection{Actions}
+	\DndMonsterMelee[
+	name=Beak,
+	mod=+5,
+	dmg=\DndDice{2d6 + 4},
+	dmg-type=piercing,
+	%extra=,
+	]
+
+	\DndMonsterMelee[
+	name=Claws,
+	mod=+5,
+	dmg=\DndDice{2d8 + 4},
+	dmg-type=slashing,
+	%extra=,
+	]
+\end{DndMonster}
+
+\subsection{Rest of The Tain Sixty}
+\label{subsec:the_tain_sixty}
+
+% TODO: Finish this section
+
+
+% TODO: Add bibtex, add The Game Master's Book of Non-Player Characters.
+
+
+\section*{Bibliography \& Citations}
+
+% TODO: All images are created using a specific model, cite the model.
+% TODO: Guest list comes from a stack overflow answer
+% TODO: Menu created with ChatGPT
+% TODO: Some of the conversations and ideas created in a dialogue with ChatGPT
+% TODO: Add a proper citation to The Game Master's Book of Non-Player Characters
+
+\section*{Appendix: Handouts}
+
+\subsection*{The Menu}
+\subsection*{The Guest List}
+\subsection*{Tain Manor Maps}
+
+% TODO: If planning for a heist, there should be a copy of these in the original architects' offices or house. This can be found out using an Investigate check DC 25 or by visiting the city records.
+\subsection*{Tain Manor Gardens Map}
+
+\end{document}
